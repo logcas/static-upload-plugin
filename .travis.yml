@@ -9,7 +9,6 @@ jobs:
   include:
     - stage: npm release
       node_js: "8"
-      script: npm run build
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
