@@ -38,11 +38,12 @@ module.exports = class UploadCdnPlugin {
     this.path = options.path || '/';
     this.include = options.include || null;
     this.exclude = options.exclude || null;
+    this.outputDir = options.outputDir || 'dist';
   }
 
   apply(complier) {
     complier.plugin('done', () => {
-      let fileList = readFile(path.join(process.cwd(), 'dist'));
+      let fileList = readFile(path.join(process.cwd(), this.outputDir));
       fileList = filterFile(fileList, this.include, this.exclude);
       const inst = new __uploader__[this.provider](this.config);
       fileList.forEach(f => {

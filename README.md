@@ -52,6 +52,9 @@ CDN配置信息，对于不同的`provider`配置信息不同。必须输入且�
 ### `options.path`
 上传路径，默认为`/`，即上传至`http://www.xxx.com/`位置。可选。
 
+### `options.outputDir`
+Webpack出口（ouput）所在位置，相对路径，默认为`dist`，可选。
+
 ### `options.include`
 过滤器，说明需要上传的文件。支持正则、字符串以及字符串数组的形式，其中字符串、字符串数组作为文件扩展名判断。
 
