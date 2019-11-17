@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.com/logcas/static-upload-plugin.svg?branch=master)](https://travis-ci.com/logcas/static-upload-plugin)
 
 - [x] 七牛云
-- [ ] 又拍云
+- [x] 又拍云
 - [ ] 阿里云OSS
 - [ ] ...More
 
@@ -18,6 +18,7 @@ npm i static-upload-plugin -D
 ```js
 const StaticUploadPlugin = require('static-upload-plugin');
 module.exports = {
+  // 以七牛云为例
   // 其他配置
   plugins: [
     new StaticUploadPlugin({
@@ -46,6 +47,15 @@ CDN配置信息，对于不同的`provider`配置信息不同。必须输入且�
   accessKey: 'xxxx',
   secretKey: 'xxxx',
   buckcet: 'xxxxx'
+}
+```
+
+#### 又拍云
+```js
+{
+  operator: 'xxxx', // 操作员
+  password: 'xxxx', // 操作员密码
+  service: 'xxxxx' // 服务名
 }
 ```
 
