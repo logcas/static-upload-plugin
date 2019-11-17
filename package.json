@@ -1,6 +1,6 @@
 {
   "name": "static-upload-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "Webpack plugin for uploading static to cdn",
   "main": "lib/index.js",
