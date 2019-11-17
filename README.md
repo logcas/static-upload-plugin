@@ -36,7 +36,7 @@ module.exports = {
 
 ## Options
 ### `options.provider`
-CDN服务商，目前可选：qiniu（七牛云）。必须输入。
+CDN服务商，目前可选：qiniu（七牛云）、upyun（又拍云）。必须输入。
 
 ### `options.config`
 CDN配置信息，对于不同的`provider`配置信息不同。必须输入且完整。
